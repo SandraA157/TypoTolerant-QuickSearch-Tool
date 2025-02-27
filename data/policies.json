@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What are your hotel policies or policy?",
+        "answer": "{HotelPolicy}"
+    },
+    {
+        "question": "Is smoking allowed in the hotel?",
+        "answer": "{SmokingPolicy}"
+    },
+    {
+        "question": "Are there any quiet hours in the hotel?",
+        "answer": "{QuietHourPolicy}"
+    },
+    {
+        "question": "What should I do to ensure privacy and respect for other guests?",
+        "answer": "{PrivacyPolicy}"
+    },
+    {
+        "question": "Are there any safety rules I should be aware of?",
+        "answer": "{SafetyPolicy}"
+    },
+    {
+        "question": "Do you allow pets?",
+        "answer": "{PetsPolicy}"
+    }
+]

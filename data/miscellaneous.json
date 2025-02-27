@@ -1,0 +1,43 @@
+[
+    {
+        "question": "Hello",
+        "answer": "Hello, I am a chatbot created to assist you. "
+    },
+    {
+        "question": "Goodbye, see you later.",
+        "answer": "It was a pleasure assisting you! Have a great day!"
+    },
+    {
+        "question": "What is your name?",
+        "answer": "I am a chatbot created to assist you."
+    },
+    {
+        "question": "How are you?",
+        "answer": "I'm doing great, thanks for asking! How about you?"
+    },
+    {
+        "question": "What is the weather like today?",
+        "answer": "Sorry, I don't have access to weather information."
+    },
+    {
+        "question": "What can you do?",
+        "answer": "I can answer your questions based on a predefined set of data."
+    },
+    {
+        "question": "What is the address of the hotel?",
+        "answer": "{Address}"
+    },
+    {
+        "question": "Where are the emergency exits?",
+        "answer": "{EmergencyExit}"
+    },
+    {
+        "question": "What is there to do around the hotel?",
+        "answer": "{HotelSurrounding}"
+    },
+    {
+        "question": "How can I get help during my stay?",
+        "answer": "{Help}"
+    }
+
+]

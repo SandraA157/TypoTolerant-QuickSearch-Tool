@@ -1,0 +1,30 @@
+[
+    {
+        "question": "Do you have a gym?",
+        "answer": "{HotelGym}"
+    },
+    {
+        "question": "Is there a swimming pool in the hotel?",
+        "answer": "{HotelSwimmingPool}"
+    },
+    {
+        "question": "Do you have any meeting rooms?",
+        "answer": "{HotelMeetingRoom}"
+    },
+    {
+        "question": "Is there a parking facility?",
+        "answer": "{HotelParking}"
+    },
+    {
+        "question": "Is there a dining facility?",
+        "answer": "{HotelRestaurant}"
+    },
+    {
+        "question": "Is there a lounge where I can relax?",
+        "answer": "{HotelLounge}"
+    },
+    {
+        "question": "Do you have a bar?",
+        "answer": "{HotelBar}"
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "question": "What time is breakfast served? What are the breakfast hours?",
+        "answer": "{BreakfastTime}"
+    },
+    {
+        "question": "When does breakfast start?",
+        "answer": "{BreakfastStartTime}."
+    },
+    {
+        "question": "When does breakfast end?",
+        "answer": "{BreakfastEndTime}."
+    },
+    {
+        "question": "Do I get breakfast with my stay? Is breakfast included?",
+        "answer": "{BreakfastIncluded}"
+    },
+    {
+        "question": "Do I need to pay for breakfast? Is breakfast free of charge?",
+        "answer": "{BreakfastFee}"
+    },
+    {
+        "question": "Where is breakfast served? Where can I have breakfast? Where can I eat breakfast in the hotel?",
+        "answer": "{BreakfastLocation}"
+    },
+    {
+        "question": "Where can I get breakfast in the hotel? Where is breakfast served at the hotel?",
+        "answer": "{BreakfastLocationTime}"
+    },
+    {
+        "question": "Can I get breakfast delivered to my room? Is breakfast available in-room? Can I have breakfast in my room?",
+        "answer": "{BreakfastInRoom}"
+    },
+    {
+        "question": "is the breakfast buffet style? What kind of breakfast is served? What type of breakfast do you offer?",
+        "answer": "{BreakfastOffers}"
+    },
+    
+    {
+        "question": "What time is lunch served? What are the lunch hours?",
+        "answer": "{LunchTime}"
+    },
+    {
+        "question": "When does lunch start?",
+        "answer": "{LunchStartTime}."
+    },
+    {
+        "question": "When does lunch end?",
+        "answer": "{LunchEndTime}."
+    },
+    {
+        "question": "Do I get lunch with my stay? Is lunch included?",
+        "answer": "{LunchIncluded}"
+    },
+    {
+        "question": "Is lunch free of charge? Do I need to pay for lunch?",
+        "answer": "{LunchFee}"
+    },
+    {
+        "question": "Where can I have lunch? Where is breakfast served? Where can I eat breakfast in the hotel?",
+        "answer": "{LunchLocation}"
+    },
+    {
+        "question": "Where can I get Lunch in the hotel? Where is Lunch served at the hotel?",
+        "answer": "{LunchLocationTime}"
+    },
+    {
+        "question": "Can I have Lunch in my room? Is Lunch available in-room? Can I get Lunch delivered to my room?",
+        "answer": "{LunchInRoom}"
+    },
+    {
+        "question": "What type of lunch do you offer?",
+        "answer": "{LunchOffers}"
+    },
+    {
+        "question": "What time is Dinner served? What are the Dinner hours?",
+        "answer": "{DinnerTime}"
+    },
+    {
+        "question": "When does Dinner start?",
+        "answer": "{DinnerStartTime}."
+    },
+    {
+        "question": "When does Dinner end?",
+        "answer": "{DinnerEndTime}."
+    },
+    {
+        "question": "Do I get Dinner with my stay? Is Dinner included?",
+        "answer": "{DinnerIncluded}"
+    },
+    {
+        "question": "Is Dinner free of charge? Do I need to pay for Dinner?",
+        "answer": "{DinnerFee}"
+    },
+    {
+        "question": "Where can I have Dinner? Where is Dinner served? Where can I eat Dinner in the hotel?",
+        "answer": "{DinnerLocation}"
+    },
+    {
+        "question": "Where can I get Dinner in the hotel? Where is Dinner served at the hotel?",
+        "answer": "{DinnerLocationTime}"
+    },
+    {
+        "question": "Can I have Dinner in my room? Is Dinner available in-room? Can I get Dinner delivered to my room?",
+        "answer": "{DinnerInRoom}"
+    },
+    {
+        "question": "What type of dinner do you offer?",
+        "answer": "{DinnerOffers}"
+    }
+
+]

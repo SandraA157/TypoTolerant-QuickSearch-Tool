@@ -1,0 +1,56 @@
+[
+    {
+        "question": "Are there any good restaurants nearby?",
+        "answer": "{LocalRestaurant}"
+    },
+    {
+        "question": "Where can I find the best restaurant in the area?",
+        "answer": "{LocalRestaurant}"
+    },
+    {
+        "question": "Where is the nearest convenience store?",
+        "answer": "{LocalConvenienceStore}"
+    },
+    {
+        "question": "Is there a 24-hour store nearby?",
+        "answer": "{LocalConvenienceStore}"
+    },
+    {
+        "question": "Where is the nearest bank?",
+        "answer": "{LocalBank}"
+    },
+    {
+        "question": "Are there any ATMs nearby?",
+        "answer": "{LocalATM}"
+    },
+    {
+        "question": "What is the nearest hospital?",
+        "answer": "{LocalHospital}"
+    },
+    {
+        "question": "Is there a pharmacy nearby?",
+        "answer": "{LocalPharmacy}"
+    },
+    {
+        "question": "Is there a laundromat nearby?",
+        "answer": "{LocalLaundromat}"
+    },
+    {
+        "question": "Is there any recommended places to visit nearby?",
+        "answer": "{LocalAttraction}"
+    },
+    {
+        "question": "Is there any tourist places to visit nearby?",
+        "answer": "{LocalAttraction}"
+    },
+    {
+        "question": "Is there any poppular places to visit nearby?",
+        "answer": "{LocalAttraction}"
+    },
+    {
+        "question": "Is there any souvenir shop nearby?",
+        "answer": "{LocalSouvenir}"
+    }
+
+    
+]

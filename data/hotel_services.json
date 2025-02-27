@@ -1,0 +1,31 @@
+[
+    {
+        "question": "Do you offer room service?",
+        "answer": "{RoomService}"
+    },
+    {
+        "question": "Can I get extra towels?",
+        "answer": "{ExtraTowel}"
+    },
+    {
+        "question": "Can I get extra beds?",
+        "answer": "{ExtraTowel}"
+    },
+    {
+        "question": "Is there Wi-Fi in the hotel?",
+        "answer": "{Wi-fi}"
+    },
+    {
+        "question": "Can I receive mail or packages here?",
+        "answer": "{Mail}"
+    },
+    {
+        "question": "Do you offer laundry services?",
+        "answer": "{LaundryService}"
+    },
+    {
+        "question": "Can I get a wake-up call?",
+        "answer": "{WakeUpCall}"
+    }
+
+]
