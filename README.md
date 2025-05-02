@@ -1,4 +1,4 @@
-# Typo-Tolerant Quick Search App (Flask + Fuzzy Matching + Embeddings)
+# TypoTolerant-QuickSearch-Tool (Flask + Fuzzy Matching + Embeddings)
 
 ## Overview
 This is a Python-based command-line tool for fast, typo-tolerant searching through a static JSON database of question-answer pairs.
