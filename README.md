@@ -36,7 +36,8 @@ Install dependencies with:
 3. Running the Tool
 - Run the script:
     python search_tool.py
-
+- Run the flask script:
+    python app.py
 ## Features
 - Searches through static Q&A data
 - Handles minor typos using fuzzy matching
