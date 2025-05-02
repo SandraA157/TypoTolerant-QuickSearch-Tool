@@ -36,8 +36,6 @@ Install dependencies with:
 3. Running the Tool
 - Run the script:
     python search_tool.py
-- You will be prompted to type your question:
-- Type exit to quit the tool.
 
 ## Features
 - Searches through static Q&A data
