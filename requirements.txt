@@ -1,0 +1,8 @@
+torch
+requests
+flask
+flask-cors
+beautifulsoup4
+sentence-transformers
+transformers
+fuzzywuzzy
