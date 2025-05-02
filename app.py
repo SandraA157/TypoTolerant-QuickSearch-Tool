@@ -1,9 +1,8 @@
-# Import necessary libraries
+import json
 import torch
 import os
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
-from bs4 import BeautifulSoup
 from sentence_transformers import SentenceTransformer, util
 from transformers import DistilBertTokenizer, DistilBertForQuestionAnswering
 from fuzzywuzzy import fuzz
@@ -21,61 +20,73 @@ retrieval_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
 # Static database paths
 database_paths = {
-    'data1': '/path/to/data1.json',
+    'data1': '/path/to/data1.json',  # Replace this with actual path
 }
 
 @app.route('/index')
 def index():
     return render_template('index.html')
 
-# Load database from JSON
+# Load database from JSON file
 def load_database():
     database = {}
-    for category, path in database_paths.items():
+    for name, path in database_paths.items():
         try:
             with open(path, 'r', encoding='utf-8') as file:
                 data = json.load(file)
                 if isinstance(data, list):
-                    database[category] = data
+                    database[name] = data
                 else:
-                    print(f"⚠️ Warning: {category} data is not a list. Skipping...")
+                    print(f"Warning: {name} data is not a list. Skipping...")
         except (FileNotFoundError, json.JSONDecodeError) as e:
-            print(f"⚠️ Error loading {path}: {e}")
-            database[category] = []
+            print(f"Error loading {path}: {e}")
+            database[name] = []
     return database
 
 database = load_database()
 
-# Retrieve best answer from static data
-def retrieve_relevant_text(query, database):
-    print(f"🔎 Searching for answer to: '{query}'")
+# Retrieve the most relevant entry from the static data
+def retrieve_relevant_entry(query, database):
+    query = query.strip().lower()
 
-    # Check for exact match
-    for category, qa_pairs in database.items():
-        for qa in qa_pairs:
-            if query.lower() == qa["question"].lower():
-                return qa["answer"]
+    # Exact match
+    for _, entries in database.items():
+        for item in entries:
+            if query == item.get("keyword", "").lower():
+                return item.get("entry", "")
 
-    # Use embeddings for similarity search
+    # Fuzzy match
+    best_match = None
+    highest_score = 0
+    for _, entries in database.items():
+        for item in entries:
+            keyword = item.get("keyword", "")
+            score = fuzz.ratio(query, keyword.lower())
+            if score > highest_score:
+                highest_score = score
+                best_match = item.get("entry", "")
+    if highest_score >= 85:
+        return best_match
+
+    # Semantic similarity
     query_embedding = retrieval_model.encode(query, convert_to_tensor=True)
-    best_match, highest_score = "", -1
-
-    for category, qa_pairs in database.items():
-        for qa in qa_pairs:
-            text = qa["question"] + " " + qa["answer"]
-            embedding = retrieval_model.encode(text, convert_to_tensor=True)
-            similarity = util.pytorch_cos_sim(query_embedding, embedding).item()
-            if similarity > highest_score:
-                highest_score, best_match = similarity, qa["answer"]
-
-    return best_match if highest_score > 0.5 else "Sorry, I couldn't find a good answer."
+    best_match, best_score = "", -1
+    for _, entries in database.items():
+        for item in entries:
+            combined_text = item.get("keyword", "") + " " + item.get("entry", "")
+            entry_embedding = retrieval_model.encode(combined_text, convert_to_tensor=True)
+            similarity = util.pytorch_cos_sim(query_embedding, entry_embedding).item()
+            if similarity > best_score:
+                best_score = similarity
+                best_match = item.get("entry", "")
+    return best_match if best_score > 0.5 else "No relevant entry found."
 
 @app.route("/chat", methods=["POST"])
-def chat_route():
+def chat():
     data = request.get_json()
     query = data.get("query", "")
-    response = retrieve_relevant_text(query, database)
-    return jsonify({"response": response})
+    result = retrieve_relevant_entry(query, database)
+    return jsonify({"response": result})
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
