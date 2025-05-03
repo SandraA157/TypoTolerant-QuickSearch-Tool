@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Layout for form, buttons, and table */
+div {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 4px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Edit Popup Styles */
+#editpopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    z-index: 1000;
+}
+
+#editpopup form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto;
+}
+
+#editpopup input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#editpopup button {
+    width: 48%;
+    margin-right: 4%;
+    background-color: #007BFF;
+}
+
+#editpopup #cancelButton {
+    background-color: #DC3545;
+}
+
+#editpopup button:hover {
+    background-color: #0056b3;
+}
+
+/* Add Section Styles */
+div > h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+div > input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div > button {
+    width: 100%;
+    background-color: #28a745;
+    margin-top: 12px;
+}
+
+/* Search Box Styling */
+#searchBox {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    #editpopup form {
+        width: 90%;
+    }
+
+    #searchBox {
+        font-size: 14px;
+    }
+
+    div {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
