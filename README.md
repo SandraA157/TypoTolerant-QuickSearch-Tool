@@ -1,7 +1,7 @@
 # TypoTolerant-QuickSearch-Tool (Flask + Fuzzy Matching + Embeddings)
 
 ## Overview
-This is a Python-based command-line tool for fast, typo-tolerant searching through a static JSON database of question-answer pairs.
+This is a Python-based command-line tool for fast, typo-tolerant searching through a static JSON database.
 
 It supports:
 - Exact match retrieval
@@ -39,7 +39,7 @@ Install dependencies with:
 - Run the flask script:
     python app.py
 ## Features
-- Searches through static Q&A data
+- Searches through static data
 - Handles minor typos using fuzzy matching
 - Requires no internet or external services-
 - Lightweight and easy to modify
