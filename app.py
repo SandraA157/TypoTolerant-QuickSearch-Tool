@@ -6,6 +6,7 @@ from flask_cors import CORS
 from sentence_transformers import SentenceTransformer, util
 from transformers import DistilBertTokenizer, DistilBertForQuestionAnswering
 from fuzzywuzzy import fuzz
+from smartsearch import retrieve_relevant_entry
 
 # Setup Flask
 app = Flask(__name__, static_folder='static', static_url_path='/static', template_folder='templates')
