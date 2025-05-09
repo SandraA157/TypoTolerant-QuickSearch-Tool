@@ -1,4 +1,4 @@
-# TypoTolerant-QuickSearch-Tool/Predetermined-Responses-Chatbot (Flask + Fuzzy Matching + Embeddings)
+# TypoTolerant-QuickSearch/Predefined-Chatbot Tool (Flask + Fuzzy Matching + Embeddings)
 
 ## Overview
 This is a Python-based command-line tool for fast, typo-tolerant searching through a static JSON database. 
