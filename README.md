@@ -31,7 +31,7 @@ Install dependencies with:
 
 2. Update the file path in your script:
     database_paths = {
-        'data1': '/full/path/to/data1.json'
+        'data': '/full/path/to/data.json'
     }
 3. Running the Tool
 - Run the script:
