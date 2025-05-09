@@ -9,7 +9,7 @@ tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased-distill
 qa_model = DistilBertForQuestionAnswering.from_pretrained("distilbert-base-uncased-distilled-squad")
 
 database_paths = {
-    'reference': '/home/user/Downloads/TypoTolerant-QuickSearch-Tool-main/data1.json'
+    'reference': '/full/path/to/your/data.json'
 }
 
 def load_database():
