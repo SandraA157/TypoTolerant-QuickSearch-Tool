@@ -1,0 +1,22 @@
+[
+  { "keyword": "pip", "entry": "Python package installer." },
+  { "keyword": "flask", "entry": "A lightweight web framework for Python." },
+  { "keyword": "django", "entry": "A high-level Python web framework for rapid development." },
+  { "keyword": "java", "entry": "A popular, object-oriented programming language." },
+  { "keyword": "html", "entry": "HyperText Markup Language, used to structure web pages." },
+  { "keyword": "css", "entry": "Cascading Style Sheets, used to style the visual presentation of web pages." },
+  { "keyword": "javascript", "entry": "A programming language primarily used for building interactive web pages." },
+  { "keyword": "node.js", "entry": "A JavaScript runtime built on Chrome's V8 engine, used for server-side scripting." },
+  { "keyword": "mongodb", "entry": "A NoSQL database known for storing data in flexible, JSON-like documents." },
+  { "keyword": "react", "entry": "A JavaScript library for building user interfaces, primarily for single-page applications." },
+  { "keyword": "redux", "entry": "A state management library often used with React." },
+  { "keyword": "docker", "entry": "A platform used to develop, ship, and run applications in containers." },
+  { "keyword": "kubernetes", "entry": "An open-source system for automating the deployment, scaling, and management of containerized applications." },
+  { "keyword": "python", "entry": "A high-level programming language known for its readability and versatility." },
+  { "keyword": "sql", "entry": "Structured Query Language, used to manage and query relational databases." },
+  { "keyword": "api", "entry": "Application Programming Interface, a set of rules that allows different software programs to communicate with each other." },
+  { "keyword": "json", "entry": "JavaScript Object Notation, a lightweight format for storing and exchanging data." },
+  { "keyword": "git", "entry": "A distributed version control system used for tracking changes in source code." },
+  { "keyword": "bash", "entry": "A Unix shell and command language commonly used in Linux environments." },
+  { "keyword": "linux", "entry": "An open-source, Unix-like operating system widely used for servers and development." }
+]
