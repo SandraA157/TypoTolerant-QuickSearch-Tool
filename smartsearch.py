@@ -13,7 +13,7 @@ retrieval_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
 # Static database paths
 database_paths = {
-    'data1': '/path/to/data1.json',  # Replace this with actual path
+    'data': '/full/path/to/your/data.json',  # Replace this with actual path
 }
 
 # Load database from JSON file
@@ -35,9 +35,9 @@ def load_database():
 database = load_database()
 
 # Retrieve the most relevant entry from the static data
-def retrieve_relevant_entry(query, database):
+def retrieve_relevant_entry(query):
     query = query.strip().lower()
-
+            
     # Exact match
     for _, entries in database.items():
         for item in entries:
@@ -49,7 +49,8 @@ def retrieve_relevant_entry(query, database):
     highest_score = 0
     for _, entries in database.items():
         for item in entries:
-            keyword = item.get("keyword", "")
+            keyword = item.get("keyword", "").strip().lower()
+            query = query.strip().lower()
             score = fuzz.ratio(query, keyword.lower())
             if score > highest_score:
                 highest_score = score
@@ -60,12 +61,18 @@ def retrieve_relevant_entry(query, database):
     # Semantic similarity
     query_embedding = retrieval_model.encode(query, convert_to_tensor=True)
     best_match, best_score = "", -1
+
     for _, entries in database.items():
         for item in entries:
             combined_text = item.get("keyword", "") + " " + item.get("entry", "")
             entry_embedding = retrieval_model.encode(combined_text, convert_to_tensor=True)
             similarity = util.pytorch_cos_sim(query_embedding, entry_embedding).item()
+
             if similarity > best_score:
                 best_score = similarity
                 best_match = item.get("entry", "")
-    return best_match if best_score > 0.5 else "No relevant entry found."
+
+    if best_score > 0.5:  
+        return best_match
+    else:
+        return "No relevant entry found."
