@@ -1,14 +1,14 @@
 # TypoTolerant-QuickSearch-Tool (Flask + Fuzzy Matching + Embeddings)
 
 ## Overview
-This is a Python-based command-line tool for fast, typo-tolerant searching through a static JSON database.
+This is a Python-based command-line tool for fast, typo-tolerant searching through a static JSON database. 
+
+It can also function as a chatbot with predetermined responses if the fuzzy match score threshold set lowers (as originally intended).
 
 It supports:
 - Exact match retrieval
 - Fuzzy matching for typo tolerance
 - Semantic similarity using sentence embeddings
-
-Ideal local documentation lookups.
 
 ## Requirements
 - Python 3.7 or higher
