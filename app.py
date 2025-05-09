@@ -9,11 +9,6 @@ app = Flask(__name__, static_folder='static', static_url_path='/static', templat
 app.secret_key = 'secretkey'
 CORS(app)
 
-# Static database paths
-database_paths = {
-    'data1': '/full/path/to/your/data.json',  # Replace this with actual path
-}
-
 @app.route("/chat", methods=["POST"])
 def chat():
     data = request.get_json()
