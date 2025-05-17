@@ -26,12 +26,17 @@ Install dependencies with:
       {
         "keyword": "flask",
         "entry": "A lightweight web framework for Python."
+      },
+      {
+        "keyword": "xxxx",
+        "entry": "xxxxxxx"
       }
     ]
 
 2. Update the file path in your script:
     database_paths = {
-        'data': '/full/path/to/data.json'
+        'data1': '/full/path/to/data1.json'
+        'data2': '/full/path/to/data2.json'
     }
 3. Running the Tool
 - Run the script:
