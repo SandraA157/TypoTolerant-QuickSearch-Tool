@@ -18,6 +18,7 @@ Install dependencies with:
 
 ## Setup
 1. Prepare your keyword-entry database in a JSON file with this format:
+```
     [
       {
         "keyword": "pip",
@@ -32,14 +33,14 @@ Install dependencies with:
         "entry": "xxxxxxx"
       }
     ]
-
+```
 2. Update the file path in your script:
-
+```
 database_paths = {
 'data1': '/full/path/to/data1.json'
 'data2': '/full/path/to/data2.json'
 }
-
+```
 3. Running the Tool
 - Run the script:
     python search_tool.py
