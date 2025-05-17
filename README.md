@@ -14,7 +14,9 @@ It supports:
 - Python 3.7 or higher
 
 Install dependencies with:
+```
   pip install -r requirements.txt
+```
 
 ## Setup
 1. Prepare your keyword-entry database in a JSON file with this format:
