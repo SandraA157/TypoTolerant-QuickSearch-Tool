@@ -34,10 +34,12 @@ Install dependencies with:
     ]
 
 2. Update the file path in your script:
-    database_paths = {
-        'data1': '/full/path/to/data1.json'
-        'data2': '/full/path/to/data2.json'
-    }
+
+database_paths = {
+'data1': '/full/path/to/data1.json'
+'data2': '/full/path/to/data2.json'
+}
+
 3. Running the Tool
 - Run the script:
     python search_tool.py
